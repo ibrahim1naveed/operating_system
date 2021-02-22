@@ -1,0 +1,41 @@
+3.1: Output from this:
+
+COMMAND         DESCRIPTION
+help            Displays all the commands
+quit            Exits / terminates the shell with "Bye!"
+set VAR STRING  Assigns a value to shell memory
+print VAR       Displays the STRING assigned to VAR
+run SCRIPT.TXT  Executes the file SCRIPT.TXT
+a3
+a3
+b3
+a3
+b3
+b3
+c3
+c3
+d3
+c3
+d3
+d3
+
+Average # of cycles for 5 measurements(Quanta = 2):
+133,87,86,86,87 : Average = 95.8 CYCLES
+
+
+Average # of cycles for 5 measurements(Quanta = 5): 
+112,87,85,94,87 : Average = 93 CYCLES
+
+Average # of cycles for 5 measurements(Quanta = 20):
+111,85,83,86,82 : Average = 89.4 CYCLES
+
+3.3:
+a) I noticed an increase in speed as I increased the quanta. This is because it led to less task swtiches and CPU bursts. 
+
+b) The files were each with 9 commands. Quanta = 2 meant a lot of taks swtiches. Wheres, as we increased this the speed increased. The best speed was at 20 because my code runs only up till a prgorams end which is 9 and the optimal quanta length. 
+
+
+c) The results would change depending on the time allocated. if the time accurately predicts the optimal time required on average by each program to run, it would lead to greater speed. However, if the time is a relatively smaller duration it may lead to multiple task swtiches and it being really slow. We should also account for the fact that measuring what is the optimal time for different programs might be a really demanding and challenging task. 
+
+
+
